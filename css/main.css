@@ -1,0 +1,409 @@
+/*Standard CSS*/
+/*General Needs*/
+html, body{
+	height: 100%;
+	margin: 0px;
+	overflow-x: hidden;
+}
+main {
+	background: linear-gradient(to bottom, #DDDDDD 0%, #7B7B7B 100%);
+	background-repeat: no-repeat;
+	min-height: 100%;
+	margin: 0px;
+	top: 0px;
+}
+.navigationSection {
+	width: auto;
+	height: auto;
+	margin: 20px 10px 20px 10px;
+	position: relative;
+}
+.navigation {
+	display: block;
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+	width: auto;
+	height: 100%;
+	margin: 30px;
+	overflow: hidden;
+	background-color: #ACACAC;
+	border-radius: 15px;
+}
+.navigationlink {
+	text-decoration: none;
+	color: black;
+	vertical-align: middle;
+	padding-top: 8px;
+	font-size: 25px;
+}
+.floright{
+	float: right;
+}
+/*Header Needs*/
+header{
+	/*Dimensions*/
+	margin: 0px 50px 0px 50px;	
+	min-width: 200px;
+	width: calc(100% - 100px);
+	border-radius: 0px 0px 50px 50px;
+	position: fixed;
+	top: 0px;
+	float: right;
+	/*Color*/
+	background-color: #808080;
+	/*Text*/
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	z-index: 1;
+}
+header p{
+	margin: 10px;
+}
+/*HOME CSS NEEDS*/
+/*Home Animated Text Needs*/
+.pHomeAniText {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+/*Home Main Container Needs*/
+.homeBlankSection {
+	width: auto;
+	height: 100px;
+	margin: 0px 10px 0px 10px;
+	position: relative;
+}
+.animatedTextSection {
+	width: 90%;
+	height: 100px;
+	margin: 0px auto 0px auto;
+	position: relative;
+}
+div.homeButtonsCont {
+	display: inline-block;
+	/*background-color: pink;*/
+}
+div.homePhotoCont {
+	display: inline-block;
+	/*background-color: purple;*/
+}
+.homePhotoCont img {
+	float: right;
+}
+.directorylink {
+	text-decoration: none;
+	color: black;
+	vertical-align: middle;
+	padding-top: 35px;
+	font-size: 30px;
+}
+.directory{
+	display: block;
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+	width: auto;
+	height: 120px;
+	margin: 30px;
+	overflow: hidden;
+	background-color: lightgray;
+	border-radius: 15px;
+}
+.border5px {
+	border: 5px solid black;
+	border-radius: 10px;
+}
+
+/*ABOUT ME CSS NEEDS*/
+.blankSection {
+	width: auto;
+	height: 15px;
+	margin: 0px 10px 0px 10px;
+	position: relative;
+}
+.aboutMeAnimatedTextSection {
+	width: 100%;
+	height: 80px;
+	margin: 0px auto 0px auto;
+	position: relative;
+}
+.pAboutMeName {
+	text-align: left;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+.genInfo {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+.genInfoMore p {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+/*PROJECTS CSS NEEDS*/
+.projectsBlankSection {
+	width: auto;
+	height: 15px;
+	margin: 0px 10px 0px 10px;
+	position: relative;
+}
+.projectsAnimatedTextSection {
+	width: 100%;
+	height: 80px;
+	margin: 0px auto 0px auto;
+	position: relative;
+}
+.pProjectsName {
+	text-align: left;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+.projectsGeneralInfo {
+	padding: 10px;
+}
+.projectsGeneralInfo p {
+	font-size: 18px;
+	font-weight: normal;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+
+/*Animation Needs*/
+
+/*Home Page Animations*/
+/*Header Animation*/
+header {
+	animation-name: HeaderAni;
+	animation-duration: 1s;
+}
+@keyframes HeaderAni {
+	0% {top: -50px;}
+	100% {top: 0px;}
+}
+/*Content Animations*/
+div.homeButtonsCont {
+	animation-name: HomeButtonsContAni;
+	left: -1000px;
+	animation-duration: 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes HomeButtonsContAni {
+	from {left: -1000px;}
+	to {left: 0px;}
+}
+div.homeDir1 {
+	animation-name: FadeIn;
+	opacity: 0.0;
+	animation-duration: 0.5s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+}
+div.homeDir2 {
+	animation-name: FadeIn;
+	opacity: 0.0;
+	animation-duration: 0.5s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+div.homeDir3 {
+	animation-name: FadeIn;
+	opacity: 0.0;
+	animation-duration: 0.5s;
+	animation-delay: 3.5s;
+	animation-fill-mode: forwards;
+}
+div.homePhotoCont {
+	animation-name: FadeIn;
+	opacity: 0.0;
+	animation-duration: 2s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+@keyframes FadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+.directorylink{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+.directorylink::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 0%;
+	height: 100%;
+	z-index: -1;
+	background: #FAFAFA;
+}
+.directorylink:hover::before{
+	width: 100%;
+}
+.directory, .directorylink::before{
+	transition: 0.4s all ease;
+}
+.directorylink:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.navigationlink{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+.navigationlink::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 0%;
+	height: 0%;
+	border-radius: 15px;
+	z-index: -1;
+	background: #FAFAFA;
+}
+.navigationlink:hover::before{
+	width: 100%;
+	height: 100%;
+}
+.navigation, .navigationlink::before{
+	transition: 1s all ease;
+}
+.navigationlink:hover {
+	text-decoration: none;
+	color: black;
+}
+.navAni1 {
+	animation-name: DashFromLeftThreeK;
+	left: -3000px;
+	animation-duration: 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+.navAni2 {
+	animation-name: DashFromLeftThreeK;
+	left: -3000px;
+	animation-duration: 0.5s;
+	animation-delay: 0.6s;
+	animation-fill-mode: forwards;
+}
+.navAni3 {
+	animation-name: DashFromLeftThreeK;
+	left: -3000px;
+	animation-duration: 0.5s;
+	animation-delay: 0.7s;
+	animation-fill-mode: forwards;
+}
+.navAni4 {
+	animation-name: DashFromLeftThreeK;
+	left: -3000px;
+	animation-duration: 0.5s;
+	animation-delay: 0.8s;
+	animation-fill-mode: forwards;
+}
+.navActive {
+	background-color: #BFBFBF;
+}
+@keyframes DashFromLeftThreeK {
+	0% {left: -3000px;}
+	100% {left: 0px;}
+}
+
+.aboutMeGenInfoAni {
+	animation-name: DashFromLeftOneK;
+	left: -1000px;
+	animation-duration: 0.5s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes DashFromLeftOneK {
+	0% {left: -3000px;}
+	100% {left: 0px;}
+}
+.imgAboutPhoto {
+	animation-name: SlowSlideFromRightTwoK;
+	right: -2000px;
+	animation-duration: 2.5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes SlowSlideFromRightTwoK {
+	from {right: -2000px;}
+	to {right: 0px;}
+}
+.contactIcon1 {
+	animation-name: RotateFromRight;
+	right: -2000px;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+.contactIcon2 {
+	animation-name: RotateFromRight;
+	right: -2000px;
+	animation-duration: 3s;
+	animation-delay: 3.5s;
+	animation-fill-mode: forwards;
+}
+.contactIcon3 {
+	animation-name: RotateFromRight;
+	right: -2000px;
+	animation-duration: 3s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+.contactIcon4 {
+	animation-name: RotateFromRight;
+	right: -2000px;
+	animation-duration: 3s;
+	animation-delay: 4.5s;
+	animation-fill-mode: forwards;
+}
+.contactIcon5 {
+	animation-name: RotateFromRight;
+	right: -2000px;
+	animation-duration: 3s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+@keyframes RotateFromRight {
+	from {
+		right: -2000px;
+		transform: rotate(0deg);
+	}
+	to {
+		right: 0px;
+		transform: rotate(-3600deg);
+	}
+}
+
+.projectCont {
+	animation-name: FadeIn;
+	opacity: 0.0;
+	animation-duration: 1s;
+	animation-delay: 1.0s;
+	animation-fill-mode: forwards;
+}
