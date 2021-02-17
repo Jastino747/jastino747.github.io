@@ -1,4 +1,4 @@
-/*Standard CSS*/
+ /*Standard CSS*/
 /*General Needs*/
 html, body{
 	height: 100%;
@@ -177,6 +177,15 @@ div.homePhotoCont {
 	font-family: 'Trebuchet MS', sans-serif;
 }
 
+/*ACHIEVEMENTS CSS NEEDS*/
+.achievementsContainer {
+	padding-bottom: 20px;
+}
+.pAchievementHeader {
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Trebuchet MS', sans-serif;
+}
 
 
 /*Animation Needs*/
@@ -405,5 +414,13 @@ div.homePhotoCont {
 	opacity: 0.0;
 	animation-duration: 1s;
 	animation-delay: 1.0s;
+	animation-fill-mode: forwards;
+}
+
+.achievementsContainer {
+	animation-name: FadeIn;
+	opacity: 0.0;
+	animation-duration: 1s;
+	animation-delay: 1.5s;
 	animation-fill-mode: forwards;
 }
