@@ -1,9 +1,116 @@
- /*Standard CSS*/
+ /*Standard CSS USE FIREFOX INSPECT ELEMENT TO TEST RESPONSIVENESS*/
+ /*OR USE CHROME WINDOWS DIRECTLY... CHROME INSPECT ELEMENT WONT WORK */
 /*General Needs*/
+@media (max-width: 677px)  {
+	.navigation {
+		min-width: 90px;
+		margin: 30px 15px 30px 15px;
+	}
+	.navigationlink {
+		font-size: 14px;
+		padding-top: 15px;
+	}
+	.pAchievementHeader {
+		font-size: 30px;
+	}
+}
+@media (min-width: 678px) {
+	
+}
+@media (min-width: 678px) and (max-width: 767px) {
+	.navigation {
+		min-width: 110px;
+		margin: 30px 20px 30px 20px;
+	}
+	.navigationlink {
+		font-size: 16px;
+		padding-top: 14px;
+	}
+	.pAchievementHeader {
+		font-size: 40px;
+	}
+}
+@media (max-width: 767px)  {
+	.pHomeAniText {
+		font-size: 25px;
+	}
+	.pAboutMeName {
+		font-size: 30px;
+		padding-top: 20px;
+	}
+	.genInfo {
+		font-size: 18px;
+	}
+	.genInfoMore p {
+		font-size: 13px;
+	}
+	.projectsGeneralInfo p {
+		font-size: 15px;
+	}
+}
+@media (min-width: 768px) {
+	.navigation {
+		min-width: 140px;
+		margin: 30px;
+	}
+	.navigationlink {
+		font-size: 20px;
+		padding-top: 11px;
+	}
+	.pHomeAniText {
+		font-size: 30px;
+	}
+	.pAboutMeName {
+		font-size: 50px;
+		padding-top: 0px;
+	}
+	.genInfo {
+		font-size: 25px;
+	}
+	.genInfoMore p {
+		font-size: 18px;
+	}
+	.pAchievementHeader {
+		font-size: 50px;
+	}
+	.projectsGeneralInfo p {
+		font-size: 18px;
+	}
+}
+@media (min-width: 768px) and (max-width: 767px) {
+	/*.pAchievementHeader {
+		font-size: 30px;
+	}*/
+}
+@media (max-width: 991px) {
+	.projectImage {
+		width: 50%;
+		height: 50%;
+	}
+	.rightProjectHeader {
+		text-align: center;
+	}
+	.leftProjectHeader {
+		text-align: center;
+	}
+}
+@media (min-width: 992px) {
+	.projectImage {
+		width: auto;
+		height: auto;
+	}
+	.rightProjectHeader {
+		text-align: right;
+	}
+	.leftProjectHeader {
+		text-align: left;
+	}
+}
+
 html, body{
 	height: 100%;
 	margin: 0px;
-	overflow-x: hidden;
+	overflow-x: auto;
 }
 main {
 	background: linear-gradient(to bottom, #DDDDDD 0%, #7B7B7B 100%);
@@ -23,9 +130,10 @@ main {
 	position: relative;
 	vertical-align: middle;
 	text-align: center;
+/*	min-width: 130px;*/
 	width: auto;
 	height: 100%;
-	margin: 30px;
+	/*margin: 30px;*/
 	overflow: hidden;
 	background-color: #ACACAC;
 	border-radius: 15px;
@@ -34,12 +142,30 @@ main {
 	text-decoration: none;
 	color: black;
 	vertical-align: middle;
-	padding-top: 8px;
-	font-size: 25px;
+	/*padding-top: 11px;*/
+	/*font-size: 20px;*/
 }
 .floright{
 	float: right;
 }
+/*.img-wrap {
+  width: 200px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+div > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}*/
+
 /*Header Needs*/
 header{
 	/*Dimensions*/
@@ -67,7 +193,7 @@ header p{
 /*Home Animated Text Needs*/
 .pHomeAniText {
 	text-align: center;
-	font-size: 35px;
+	/*font-size: 35px;*/
 	font-weight: bold;
 	font-family: 'Trebuchet MS', sans-serif;
 }
@@ -84,14 +210,18 @@ header p{
 	margin: 0px auto 0px auto;
 	position: relative;
 }
-div.homeButtonsCont {
-	display: inline-block;
-	/*background-color: pink;*/
+/*.homeButtonsCont {
+  position: relative;
+  width: auto;
+  height: auto;
 }
-div.homePhotoCont {
-	display: inline-block;
-	/*background-color: purple;*/
-}
+.buttonContainer {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+}*/
 .homePhotoCont img {
 	float: right;
 }
@@ -134,17 +264,17 @@ div.homePhotoCont {
 }
 .pAboutMeName {
 	text-align: left;
-	font-size: 50px;
+	/*font-size: 50px;*/
 	font-weight: bold;
 	font-family: 'Trebuchet MS', sans-serif;
 }
 .genInfo {
-	font-size: 25px;
+	/*font-size: 25px;*/
 	font-weight: bold;
 	font-family: 'Trebuchet MS', sans-serif;
 }
 .genInfoMore p {
-	font-size: 18px;
+	/*font-size: 18px;*/
 	font-weight: bold;
 	font-family: 'Trebuchet MS', sans-serif;
 }
@@ -163,7 +293,7 @@ div.homePhotoCont {
 	position: relative;
 }
 .pProjectsName {
-	text-align: left;
+	/*text-align: left;*/
 	font-size: 50px;
 	font-weight: bold;
 	font-family: 'Trebuchet MS', sans-serif;
@@ -172,9 +302,12 @@ div.homePhotoCont {
 	padding: 10px;
 }
 .projectsGeneralInfo p {
-	font-size: 18px;
+	/*font-size: 18px;*/
 	font-weight: normal;
 	font-family: 'Trebuchet MS', sans-serif;
+}
+.projectsPhotoCont {
+	text-align: center;
 }
 
 /*ACHIEVEMENTS CSS NEEDS*/
@@ -182,7 +315,7 @@ div.homePhotoCont {
 	padding-bottom: 20px;
 }
 .pAchievementHeader {
-	font-size: 50px;
+	/*font-size: 50px;*/
 	font-weight: bold;
 	font-family: 'Trebuchet MS', sans-serif;
 }
@@ -203,7 +336,7 @@ header {
 /*Content Animations*/
 div.homeButtonsCont {
 	animation-name: HomeButtonsContAni;
-	left: -1000px;
+	left: -2000px;
 	animation-duration: 1s;
 	animation-delay: 1.5s;
 	animation-fill-mode: forwards;

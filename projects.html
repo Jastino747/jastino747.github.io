@@ -9,7 +9,7 @@
 <body>
 	<header>
 		<p>
-			<span>My Finished Projects</span>
+			<span>Projects</span>
 		</p>
 	</header>
 	<!-- Main comtainer goes below -->
@@ -22,7 +22,7 @@
 			<div class="container">
 			  <div class="row">
 			    <div class="col-3">
-			     	<div class="navigation navAni4"><a href="index.html" class="navigationlink"><span class="linktext">Back to Home</span></a></div>
+			     	<div class="navigation navAni4"><a href="index.html" class="navigationlink"><span class="linktext">Home</span></a></div>
 			    </div>
 			    <div class="col-3">
 			     	<div class="navigation navAni3"><a href="aboutme.html" class="navigationlink"><span class="linktext">About Me</span></a></div>
@@ -38,25 +38,51 @@
 		</div>
 		<br>
 
-		<!-- Project Container Right Photo -->
-		<div class="projectCont rightPhoto">
+		<!-- Project Container Left Photo -->
+		<div class="projectCont leftPhoto">
 			<div class="container">
-				<div class="col-12">
-					<div class="projectsAnimatedTextSection">
-						<p id="pProjectsName" class="pProjectsName" style="text-align: left">Krazy Racer</p>
+				<div class="col-lg-12">
+					<div class="projectsAnimatedTextSection rightProjectHeader">
+						<p id="pProjectsName" class="pProjectsName" style="">EnDecrypt</p>
 					</div>
 				</div>	
 			</div>	
 			<div class="container">
 			  <div class="row">
-			    <div class="col-9 projectsGeneralInfo border5px">
-			     	<p>My very first "Windows Form Application" game, based on C# programming language. A semi-endless survival racing game, where you play as a white car and must not crash onto any other car. The longer you survive, more points will be awarded for you, and more cars will be there to distract you.</p>
+			    <div class="col-lg-3 projectsPhotoCont">
+			      <!-- <img class="border5px" src="img/projectimg/EnDecrypt1.png" alt="EnDecrypt Image" width="260" height="300"> -->
+			      <img class="border5px projectImage img-fluid" src="img/projectimg/EnDecrypt1.png" alt="EnDecrypt Image">
+			    </div>
+			    <div class="col-lg-9 projectsGeneralInfo border5px">
+			     	<p>A simple text encryptor, with custom algorithm implemented. Enables you to encrypt text, and decrypt the same encrypted text. Simple implementation with index switching methods, random scrambler, and other customized methods.</p>
 			     	<p>Platform: Windows Form Application</p>
 			     	<p>Programming Language: C#</p>
-			     	<p>Project source available on my <a style="color: black; text-decoration: underline;" href="https://github.com/Jastino747/KrazyRacer" target="_blank">GitHub Repository</a>, check it out :)</p>
+			     	<p>Project source available on my <a style="color: black; text-decoration: underline;" href="https://github.com/Jastino747/EnDecrypt" target="_blank">GitHub Repository</a>, check it out :)</p>
 			    </div>
-			    <div class="col-3 projectsPhotoCont">
-			      <img class="border5px" src="img/projectimg/KrazyRacer1.png" alt="Krazy Racer Image" width="180" height="300">
+			  </div>
+			</div>	
+		</div><br>
+
+		<!-- Project Container Right Photo -->
+		<div class="projectCont rightPhoto">
+			<div class="container">
+				<div class="col-lg-12">
+					<div class="projectsAnimatedTextSection leftProjectHeader">
+						<p id="pProjectsName" class="pProjectsName" style="">Paq Men</p>
+					</div>
+				</div>	
+			</div>	
+			<div class="container">
+			  <div class="row">
+			    <div class="col-lg-9 projectsGeneralInfo border5px">
+			     	<p>Like the name, it's an imitation for the famous "Pac Man" game, but with "Windows Form App Game" and based on C# programming language. If you know the "Pac Man" game, you will know how this game works. Collect all the pellets, avoid the ghosts, and use the powerups.</p>
+			     	<p>Platform: Windows Form Application</p>
+			     	<p>Programming Language: C#</p>
+			     	<p>Project source available on my <a style="color: black; text-decoration: underline;" href="https://github.com/Jastino747/PaqMen" target="_blank">GitHub Repository</a>, check it out :)</p>
+			    </div>
+			    <div class="col-lg-3 projectsPhotoCont">
+			      <!-- <img class="border5px" src="img/projectimg/PaqMan1.png" alt="Paq Man Image" width="200" height="300"> -->
+			      <img class="border5px projectImage img-fluid" src="img/projectimg/PaqMan1.png" alt="Paq Man Image">
 			    </div>
 			  </div>
 			</div>	
@@ -65,18 +91,19 @@
 		<!-- Project Container Left Photo -->
 		<div class="projectCont leftPhoto">
 			<div class="container">
-				<div class="col-12">
-					<div class="projectsAnimatedTextSection">
-						<p id="pProjectsName" class="pProjectsName" style="text-align: right;">SS Typer</p>
+				<div class="col-lg-12">
+					<div class="projectsAnimatedTextSection rightProjectHeader">
+						<p id="pProjectsName" class="pProjectsName" style="">SS Typer</p>
 					</div>
 				</div>	
 			</div>	
 			<div class="container">
 			  <div class="row">
-			    <div class="col-5 projectsPhotoCont">
-			      <img class="border5px" src="img/projectimg/SSTyper1.png" alt="SS Typer Image" width="100%" height="100%">
+			    <div class="col-lg-5 projectsPhotoCont">
+			      <!-- <img class="border5px" src="img/projectimg/SSTyper1.png" alt="SS Typer Image" width="100%" height="100%"> -->
+			      <img class="border5px projectImage img-fluid" src="img/projectimg/SSTyper1.png" alt="SS Typer Image">
 			    </div>
-			    <div class="col-7 projectsGeneralInfo border5px">
+			    <div class="col-lg-7 projectsGeneralInfo border5px">
 			     	<p>My other "Windows Form Application" game, based on C# programming language. An endless typing game, where you have to type the requested words againts the time. The more you type, the more points you will get.</p>
 			     	<p>Platform: Windows Form Application</p>
 			     	<p>Programming Language: C#</p>
@@ -89,50 +116,29 @@
 		<!-- Project Container Right Photo -->
 		<div class="projectCont rightPhoto">
 			<div class="container">
-				<div class="col-12">
-					<div class="projectsAnimatedTextSection">
-						<p id="pProjectsName" class="pProjectsName" style="text-align: left">Paq Men</p>
+				<div class="col-lg-12">
+					<div class="projectsAnimatedTextSection leftProjectHeader">
+						<p id="pProjectsName" class="pProjectsName" style="">Krazy Racer</p>
 					</div>
 				</div>	
 			</div>	
 			<div class="container">
 			  <div class="row">
-			    <div class="col-9 projectsGeneralInfo border5px">
-			     	<p>Like the name, it's an imitation for the famous "Pac Man" game, but with "Windows Form App Game" and based on C# programming language. If you know the "Pac Man" game, you will know how this game works. Collect all the pellets, avoid the ghosts, and use the powerups.</p>
+			    <div class="col-lg-9 projectsGeneralInfo border5px">
+			     	<p>My very first "Windows Form Application" game, based on C# programming language. A semi-endless survival racing game, where you play as a white car and must not crash onto any other car. The longer you survive, more points will be awarded for you, and more cars will be there to distract you.</p>
 			     	<p>Platform: Windows Form Application</p>
 			     	<p>Programming Language: C#</p>
-			     	<p>Project source available on my <a style="color: black; text-decoration: underline;" href="https://github.com/Jastino747/PaqMen" target="_blank">GitHub Repository</a>, check it out :)</p>
+			     	<p>Project source available on my <a style="color: black; text-decoration: underline;" href="https://github.com/Jastino747/KrazyRacer" target="_blank">GitHub Repository</a>, check it out :)</p>
 			    </div>
-			    <div class="col-3 projectsPhotoCont">
-			      <img class="border5px" src="img/projectimg/PaqMan1.png" alt="Paq Man Image" width="200" height="300">
+			    <div class="col-lg-3 projectsPhotoCont">
+			      <!-- <img class="border5px" src="img/projectimg/KrazyRacer1.png" alt="Krazy Racer Image" width="180" height="300"> -->
+			      <img class="border5px projectImage img-fluid" src="img/projectimg/KrazyRacer1.png" alt="Krazy Racer Image">
 			    </div>
 			  </div>
 			</div>	
 		</div><br>
 
-		<!-- Project Container Left Photo -->
-		<div class="projectCont leftPhoto">
-			<div class="container">
-				<div class="col-12">
-					<div class="projectsAnimatedTextSection">
-						<p id="pProjectsName" class="pProjectsName" style="text-align: right;">EnDecrypt</p>
-					</div>
-				</div>	
-			</div>	
-			<div class="container">
-			  <div class="row">
-			    <div class="col-3 projectsPhotoCont">
-			      <img class="border5px" src="img/projectimg/EnDecrypt1.png" alt="EnDecrypt Image" width="260" height="300">
-			    </div>
-			    <div class="col-9 projectsGeneralInfo border5px">
-			     	<p>A simple text encryptor, with custom algorithm implemented. Enables you to encrypt text, and decrypt the same encrypted text. Simple implementation with index switching methods, random scrambler, and other customized methods.</p>
-			     	<p>Platform: Windows Form Application</p>
-			     	<p>Programming Language: C#</p>
-			     	<p>Project source available on my <a style="color: black; text-decoration: underline;" href="https://github.com/Jastino747/EnDecrypt" target="_blank">GitHub Repository</a>, check it out :)</p>
-			    </div>
-			  </div>
-			</div>	
-		</div><br>
+
 
 		<br><br>
 	</main>
