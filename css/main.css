@@ -44,6 +44,9 @@
 	.genInfoMore p {
 		font-size: 13px;
 	}
+	.pProjectsName {
+		font-size: 35px;
+	}
 	.projectsGeneralInfo p {
 		font-size: 15px;
 	}
@@ -71,6 +74,9 @@
 		font-size: 18px;
 	}
 	.pAchievementHeader {
+		font-size: 50px;
+	}
+	.pProjectsName {
 		font-size: 50px;
 	}
 	.projectsGeneralInfo p {
@@ -292,9 +298,14 @@ header p{
 	margin: 0px auto 0px auto;
 	position: relative;
 }
+.projectCont {
+	background-color: #EEEEEE;
+	margin: 0px 20px;
+	border-radius: 10px;
+}
 .pProjectsName {
 	/*text-align: left;*/
-	font-size: 50px;
+	/*font-size: 50px;*/
 	font-weight: bold;
 	font-family: 'Trebuchet MS', sans-serif;
 }
